@@ -1,0 +1,17 @@
+What happens when you type google.com in your browser?
+
+When one types google.com and presses enter, the browser takes several steps, which can be as follows:
+. Resolves the IP address of the URL via DNS
+. Generate an HTTP request with headers (user-agent, cookie, accept)
+. Open an HTTP connection to the resolved IP address
+. Send the request to the server
+. Receive the response from the server
+. Parse response headers
+. Perform additional operations depending on the response header
+. Decompress the response body if it's compressed
+. Parse the HTML code inside the response body
+. Resolves any additional resources (Scripts, Images, etc)
+. Start loading those resources via their URLs using the same steps
+. Render the HTML as soon as the required resources are loaded, and continue loading the remaining resources in the background.
+
+LINK https://www.linkedin.com/posts/gbemileke-ayodele-19b46623a_what-happens-when-you-type-googlecom-in-activity-7291431482525413376-Homf?utm_source=share&utm_medium=member_desktop
